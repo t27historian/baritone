@@ -994,6 +994,14 @@ public final class Settings {
     public final Setting<Boolean> replantNetherWart = new Setting<>(false);
 
     /**
+     * Right-click harvested crops instead of breaking them.
+     * <p>
+     * Enable this for modded crops that drop and replant themselves on right-click.
+     * When enabled, Baritone will not switch to the best tool before interacting.
+     */
+    public final Setting<Boolean> replantCropsMod = new Setting<>(false);
+
+    /**
      * Farming will scan for at most this many blocks.
      */
     public final Setting<Integer> farmMaxScanSize = new Setting<>(256);
